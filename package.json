@@ -1,0 +1,60 @@
+{
+	"name": "@liquicode/lib-server-kit-samples",
+	"version": "0.0.1",
+	"description": "Samples and examples for the @liquicode/lib-server-kit library.",
+	"homepage": "http://lib-server-kit-samples.liquicode.com",
+	"license": "MIT",
+	"public": true,
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/liquicode/lib-server-kit-samples"
+	},
+	"authors": [
+		{
+			"name": "Andre' G. Bowlin",
+			"email": "agbowlin@gmail.com",
+			"homepage": "http://liquicode.com"
+		}
+	],
+	"files": [
+		"readme.md",
+		"license.md",
+		"VERSION",
+		"dist/*",
+		"docs/*",
+		"samples/*",
+		"src/*",
+		"tests/*"
+	],
+	"ignore": [
+		".*",
+		"~*",
+		"bower_components",
+		"node_modules",
+		"build"
+	],
+	"keywords": [
+		"lib-server-kit"
+	],
+	"dependencies": {
+		"@liquicode/lib-server-kit": "0.x",
+		"@liquicode/liquicodejs": "0.x",
+		"cheerio": "^1.0.0-rc.12",
+		"uid-safe": "2.x"
+	},
+	"devDependencies": {
+		"@vivaxy/here": "3.x",
+		"mocha": "9.x",
+		"pug-cli": "0.x",
+		"webpack": "5.x",
+		"webpack-cli": "4.x",
+		"webpack-node-externals": "3.x"
+	},
+	"scripts": {
+		"test": "mocha -u bdd tests/*.js --timeout 0 --slow 10 --colors",
+		"run-docs-web-server": "npx here --directory docs --port 4200 --watch 1 --silent",
+		"010-webpack": "bash build/webpack/010-webpack.sh",
+		"810-s3-sync-docs": "bash build/s3/810-s3-sync-docs.sh",
+		"910-release-version": "node build/custom/910-release-version.js"
+	}
+}
