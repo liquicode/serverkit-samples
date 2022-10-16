@@ -37,7 +37,7 @@
 		"lib-server-kit"
 	],
 	"dependencies": {
-		"@liquicode/lib-server-kit": "0.x",
+		"@liquicode/serverkit": "0.x",
 		"@liquicode/liquicodejs": "0.x",
 		"cheerio": "^1.0.0-rc.12",
 		"uid-safe": "2.x"
