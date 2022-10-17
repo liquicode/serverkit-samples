@@ -90,5 +90,18 @@
 			"outputCapture": "std",
 			"internalConsoleOptions": "openOnSessionStart",
 		},
+		{
+			"name": "------------------------------------------",
+		},
+		{
+			"name": "Build - Release",
+			"type": "node",
+			"request": "launch",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"cwd": "${workspaceFolder}",
+			"program": "${workspaceFolder}/build/build-release.js",
+		},
 	]
 }

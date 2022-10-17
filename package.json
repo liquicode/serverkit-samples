@@ -1,6 +1,6 @@
 {
 	"name": "@liquicode/lib-server-kit-samples",
-	"version": "0.0.1",
+	"version": "0.0.28",
 	"description": "Samples and examples for the @liquicode/lib-server-kit library.",
 	"homepage": "http://lib-server-kit-samples.liquicode.com",
 	"license": "MIT",
@@ -34,11 +34,12 @@
 		"build"
 	],
 	"keywords": [
-		"lib-server-kit"
+		"serverkit",
+		"serverkit-samples"
 	],
 	"dependencies": {
-		"@liquicode/serverkit": "0.x",
 		"@liquicode/liquicodejs": "0.x",
+		"@liquicode/serverkit": "0.x",
 		"cheerio": "^1.0.0-rc.12",
 		"uid-safe": "2.x"
 	},

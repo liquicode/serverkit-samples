@@ -1,0 +1,29 @@
+#=====================================================================
+# Docker Compose file for MathsServer
+#---------------------------------------------------------------------
+# - docker compose up --wait
+# - Use at http://localhost:8080
+# - docker compose down
+#=====================================================================
+
+version: '3'
+services:
+
+  MathsServer:
+    image: agbowlin/serverkit:latest
+    container_name: MathsServer
+    environment:
+      SERVERKIT_NAME: MathsServer
+      # SERVERKIT_FOLDER: /server
+      # SERVERKIT_OPTIONS: MathsServer.options.js
+    restart: unless-stopped
+    # network_mode: host
+    ports:
+      - 8080:8080
+      - 8081:8081
+    volumes:
+      - .:/server
+    command:
+      # - --debug
+      - --shell
+      - run
