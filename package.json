@@ -1,13 +1,13 @@
 {
-	"name": "@liquicode/lib-server-kit-samples",
+	"name": "@liquicode/serverkit-samples",
 	"version": "0.0.28",
-	"description": "Samples and examples for the @liquicode/lib-server-kit library.",
-	"homepage": "http://lib-server-kit-samples.liquicode.com",
+	"description": "Samples and examples for the @liquicode/serverkit library.",
+	"homepage": "http://serverkit.net",
 	"license": "MIT",
 	"public": true,
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/liquicode/lib-server-kit-samples"
+		"url": "https://github.com/liquicode/serverkit-samples"
 	},
 	"authors": [
 		{

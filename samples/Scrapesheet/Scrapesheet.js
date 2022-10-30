@@ -1,8 +1,9 @@
 'use strict';
 
 // Load the ServerKit Library and Options.
-// const ServerKit = require( '@liquicode/serverkit' );
-const ServerKit = require( LIB_PATH.resolve( __dirname, '..', '..', 'src', 'lib-server-kit.js' ) );
+const ServerKit = require( '@liquicode/serverkit' );
+
+// Load the Server Options.
 const ServerOptions = require( './Scrapesheet.options.js' );
 
 // Create a new server in this folder.

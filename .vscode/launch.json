@@ -44,6 +44,19 @@
 			"internalConsoleOptions": "openOnSessionStart",
 		},
 		{
+			"name": "Sample: Albion Data Server",
+			"type": "node",
+			"request": "launch",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"cwd": "${workspaceFolder}/samples/AlbionDataServer",
+			"program": "${workspaceFolder}/samples/AlbionDataServer/AlbionDataServer.js",
+			"args": [],
+			"outputCapture": "std",
+			"internalConsoleOptions": "openOnSessionStart",
+		},
+		{
 			"name": "------------------------------------------",
 		},
 		{

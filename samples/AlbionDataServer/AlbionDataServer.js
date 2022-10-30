@@ -4,10 +4,10 @@
 const ServerKit = require( '@liquicode/serverkit' );
 
 // Load the Server Options.
-const ServerOptions = require( './MathsServer.options.js' );
+const ServerOptions = require( './AlbionDataServer.options.js' );
 
 // Create a new server for this folder.
-const Server = ServerKit.NewServer( 'MathsServer', __dirname, ServerOptions );
+const Server = ServerKit.NewServer( 'AlbionDataServer', __dirname, ServerOptions );
 
 // Run the server.
 ( async function ()
