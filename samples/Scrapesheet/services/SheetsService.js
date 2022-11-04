@@ -349,6 +349,25 @@ exports.Construct =
 			};
 
 
+			service.InitializeModule =
+			async function InitializeModule()
+			{
+				// Initialize the storage.
+				service.InitializeStorage();
+
+				// Use the default storage service pages.
+				service.Views.List.title = 'Sheet List';
+				service.Views.List.view = 'Services/StorageService/List';
+				service.Views.Item.title = 'Sheet Item';
+				service.Views.Item.view = 'Services/StorageService/Item';
+				service.Views.Share.title = 'Sheet Sharing';
+				service.Views.Share.view = 'Services/StorageService/Share';
+
+				// Return.
+				return;
+			};
+
+
 		//---------------------------------------------------------------------
 		// Return the Service.
 		//---------------------------------------------------------------------

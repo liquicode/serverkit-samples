@@ -52,7 +52,7 @@ exports.Construct =
 					AlbionDatabase.startup( filename );
 
 					// Do an initial refresh to get the latest data.
-					Server.Log.trace( `Refreshing data in AlbionDatabase.` );
+					Server.Log.trace( `Refreshing data in AlbionDatabase. This may take a few moments.` );
 					await AlbionDatabase.async_refresh_data();
 
 					// Schedule a database refresh every 20 minutes.
@@ -195,7 +195,6 @@ exports.Construct =
 					description: 'Show recent gold prices.',
 					requires_login: false,
 					allowed_roles: [ '*' ],
-					view: 'albion-data/gold-prices',
 				} );
 
 		}

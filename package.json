@@ -1,6 +1,6 @@
 {
 	"name": "@liquicode/serverkit-samples",
-	"version": "0.0.28",
+	"version": "0.0.35",
 	"description": "Samples and examples for the @liquicode/serverkit library.",
 	"homepage": "http://serverkit.net",
 	"license": "MIT",
@@ -39,7 +39,7 @@
 	],
 	"dependencies": {
 		"@liquicode/liquicodejs": "0.x",
-		"@liquicode/serverkit": "0.x",
+		"@liquicode/serverkit": "0.0.35",
 		"cheerio": "^1.0.0-rc.12",
 		"uid-safe": "2.x"
 	},

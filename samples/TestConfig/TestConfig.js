@@ -3,8 +3,7 @@
 
 // Load the ServerKit Library.
 const LIB_PATH = require( 'path' );
-// const ServerKit = require( '@liquicode/serverkit' );
-const ServerKit = require( LIB_PATH.resolve( __dirname, '..', '..', 'src', 'lib-server-kit.js' ) );
+const ServerKit = require( '@liquicode/serverkit' );
 
 
 // Server-Kit Initialization Options.

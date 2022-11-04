@@ -5,6 +5,22 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
+			"name": "Sample: Smallest Example",
+			"type": "node",
+			"request": "launch",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"cwd": "${workspaceFolder}/samples/SmallestExample",
+			"program": "${workspaceFolder}/node_modules/@liquicode/serverkit/src/serverkit.js",
+			"args": [
+				"list",
+				"SmallestService.SimpleFunction",
+			],
+			"outputCapture": "std",
+			"internalConsoleOptions": "openOnSessionStart",
+		},
+		{
 			"name": "Sample: Test Config",
 			"type": "node",
 			"request": "launch",
