@@ -8,7 +8,7 @@ LABEL		name="serverkit-sample-mathsserver"
 LABEL		description="The MathsServer sample project for ServerKit"
 LABEL		library="@liquicode/serverkit"
 LABEL		support="https://serverkit.net"
-LABEL		version="0.0.28"
+LABEL		version="0.0.37"
 
 # Copy source files
 COPY ../samples/MathsServer/MathsService.js          /server/MathsService.js

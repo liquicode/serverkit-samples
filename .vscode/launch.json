@@ -73,7 +73,55 @@
 			"internalConsoleOptions": "openOnSessionStart",
 		},
 		{
+			"name": "ADB: 100-build-cache",
+			"type": "node",
+			"request": "launch",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"cwd": "${workspaceFolder}/samples/AlbionDataServer/data-build",
+			"program": "${workspaceFolder}/samples/AlbionDataServer/data-build/100-build-cache.js",
+			"args": [],
+			"outputCapture": "std",
+			"internalConsoleOptions": "openOnSessionStart",
+		},
+		{
+			"name": "ADB: 200-build-marketplace",
+			"type": "node",
+			"request": "launch",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"cwd": "${workspaceFolder}/samples/AlbionDataServer/data-build",
+			"program": "${workspaceFolder}/samples/AlbionDataServer/data-build/200-build-marketplace.js",
+			"args": [],
+			"outputCapture": "std",
+			"internalConsoleOptions": "openOnSessionStart",
+		},
+		{
 			"name": "------------------------------------------",
+		},
+		{
+			"name": "Samples Tests",
+			"type": "node",
+			"request": "launch",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"cwd": "${workspaceFolder}",
+			"program": "${workspaceFolder}/node_modules/mocha/bin/mocha",
+			"args": [
+				"-u",
+				"bdd",
+				"samples/**/*.test.js",
+				"--timeout",
+				"0",
+				"--slow",
+				"10",
+				"--colors",
+			],
+			"outputCapture": "std",
+			"internalConsoleOptions": "openOnSessionStart",
 		},
 		{
 			"name": "All Tests",

@@ -11,7 +11,7 @@ LABEL		name="serverkit"
 LABEL		description="The official docker image for ServerKit"
 LABEL		library="@liquicode/serverkit"
 LABEL		support="https://serverkit.net"
-LABEL		version="0.0.28"
+LABEL		version="0.0.37"
 
 #---------------------------------------------------------------------
 # Create Runtime Environment
