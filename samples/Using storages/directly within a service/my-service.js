@@ -15,17 +15,19 @@ exports.Construct =
 			// Service Configuration Defaults
 			{
 				answer: 42,
+				// <<<<<<<<========   NOTICE   ========>>>>>>>>
 				MyStorage: Server.StorageDefaults(),
 			} );
 
 		service.Storage = null;
 
 		//---------------------------------------------------------------------
-		// Start the service.
+		// Called when the server starts up.
 		service.StartupModule =
 			async function StartupModule()
 			{
 				// Instantiate a storage based on the configured settings.
+				// <<<<<<<<========   NOTICE   ========>>>>>>>>
 				service.Storage = Server.NewStorage( service, service.Settings.MyStorage );
 				return;
 			};
@@ -43,6 +45,7 @@ exports.Construct =
 				async function ( User, Stuff )
 				{
 					// Add a new data object to the storage, include the answer just for fun.
+					// <<<<<<<<========   NOTICE   ========>>>>>>>>
 					let result = await service.Storage.CreateOne( { the_stuff: Stuff, the_answer: service.Settings.answer } );
 					return true;
 				}
@@ -58,6 +61,7 @@ exports.Construct =
 				async function ( User )
 				{
 					// Get all the stuff as an array of objects.
+					// <<<<<<<<========   NOTICE   ========>>>>>>>>
 					let result = await service.Storage.FindMany( {} );
 					return result;
 				}
@@ -67,3 +71,4 @@ exports.Construct =
 		// Return the service back to ServerKit.
 		return service;
 	};
+
